@@ -9,12 +9,44 @@
         <script src="https://aframe.io/releases/1.3.0/aframe.min.js"> </script>
     </head>
     <body>
-        <a-scene>
-            <a-box position="-1 0 -3" rotation="0 0 0" height="2" width="0.5" color="yellow"></a-box>
-            <a-box position="-0.25 -0.75 -3" rotation="0 0 0" height="0.5" width="1" color="white"> </a-box>
-            <a-box position="1 -0.75 -3" rotation="0 0 0" height="0.25" width="2" color="white"> </a-box>
-            <!--<a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
-            <a-sky color="#ECECEC"></a-sky>
-        </a-scene>
-    </body>
-</html>>
+        <a-scene>           
+            <!-- right pillar -->
+            <a-box position="25 12 0" height="30" width="10" color="grey" rotation="0 -90 0"></a-box>
+             <!-- left pillar -->
+             <a-box position="-25 12 0" height="30" width="10" color="grey" rotation="0 -90 0"></a-box>
+             <!-- upper pillar-->
+             <a-box position="0 26.51255 0" height="10" width="51" color="grey" rotation="-90 0 0" material="" geometry=""></a-box>
+            <!-- lower pillar -->
+            <a-box position="0 -2.72555 0" height="10" width="51" color="grey" rotation="-90 0 0" material="" geometry=""></a-box>
+
+            <a-sky color="#658fae"></a-sky>
+
+            <!-- animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" -->
+            <a-entity>
+                <!-- right orange structure-->
+                <a-box position="15 10 0" rotation="0 0 0" height="2" width="1" scale="6 9 6" material="color: #ff5900"></a-box>
+                <!-- left orange structure-->
+                <a-box position="-15 10 0" rotation="" height="2" width="1" scale="6 9 6" material="color: #ff5900" geometry=""></a-box>
+                <!-- center orange structure-->
+                <a-box position="0 12.00808 0" rotation="" height="2" width="1" scale="6 7 6" material="color: #ff5900" geometry=""></a-box>
+                <!-- upper orange structure-->
+                <a-box position="-0.02812 19.53739 -0.00992" height="6" width="36" material="color: #ff5900" rotation="-90 0 0" material="" geometry=""></a-box>
+                <!-- upper pink structure -->
+                <a-box position="0.03888 20.50524 0.12083" height="6" width="36" material="color: #ce6f6f" rotation="-90 0 0" geometry=""></a-box>
+                <!-- bottom pink structure -->
+                <a-box position="-0.10929 4 0" rotation="-90 -90 0" height="3.45" width="1" scale="6 7 6" material="color: #ce6f6f" geometry=""></a-box>
+                <!-- right pink structure-->
+                <a-box position="10.43185 12.00808 -0.01845" rotation="" height="2" width="0.5" scale="6 7 6" material="color: #ce6f6f" geometry=""></a-box>
+                <a-box position="3.77485 12.0721 -0.03303" rotation="" height="2" width="0.3" scale="6 7 6" material="color: #ce6f6f" geometry=""></a-box>
+                <a-box position="7.30827 18.52773 -0.01063" height="6" width="6" material="color: #ce6f6f" rotation="-90 0 0" geometry=""></a-box>
+                <!-- left pink structure-->
+                <a-box position="-8.90084 18.52694 0" height="6" width="6" material="color: #ce6f6f" rotation="-90 0 0" geometry=""></a-box>
+                <a-box position="-4.54932 12.05901 0" rotation="" height="2" width="0.8" scale="6 7 6" material="color: #ce6f6f" geometry=""></a-box>
+                <a-box position="-11.20847 12.01571 0" rotation="" height="2" width="0.3" scale="6 7 6" material="color: #ce6f6f" geometry=""></a-box>
+                <!-- blue panes -->
+                <a-plane position="-18.17937 8.89644 5.16455" height="22" width="12.2" rotaton="0 0 0" material="color: #9ca5e8; transparent: true; blending: multiply" geometry=""> </a-plane>
+                <a-plane position="18.245 9.09453 4.94516" height="22" width="12.2" rotaton="0 0 0" material="color: #9ca5e8; transparent: true; blending: multiply" geometry=""> </a-plane>
+            </a-entity>
+                <!-- camera -->
+                <a-entity camera="" position="0.8342274017834954 1.6 71.2936919134674" wasd-controls="" rotation="" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+</html>
